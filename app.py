@@ -3,6 +3,7 @@ from tensorflow.keras.models import load_model
 import numpy as np
 import os
 import cv2
+from cv2 import *
 
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = './static/uploads/'
