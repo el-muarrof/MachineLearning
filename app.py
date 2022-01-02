@@ -14,7 +14,7 @@ class_dict = {0: 'Non IDC', 1: 'IDC'}
 def predict_label(img_path):
     query = cv2.imread(img_path)
     output = query.copy()
-    query = cv2.resize(query, (60, 60))
+    query = cv2.resize(query, (50, 50))
     q = []
     q.append(query)
     q = np.array(q, dtype='float') / 255.0
